@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="fEr-wy-Zw8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="9Ow-1D-mgl">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="HHT-2R-pCz" customClass="MainVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mEj-iF-8Ym"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zn5-H8-BZp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tkg-00-fg1">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JVh-go-aTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="-330"/>
+        </scene>
+        <!--Top SliderVC-->
+        <scene sceneID="8ec-C2-cjh">
+            <objects>
+                <viewController storyboardIdentifier="TopSliderVC" id="fEr-wy-Zw8" customClass="TopSliderVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gwc-hY-huz"/>
+                        <viewControllerLayoutGuide type="bottom" id="xBa-fU-ugC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Sb-oy-tQf">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="200"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.52941176469999995" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSs-Z2-Dcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="141"/>
+        </scene>
+        <!--ContainerVC-->
+        <scene sceneID="5ax-80-J0x">
+            <objects>
+                <viewController storyboardIdentifier="ContainerVC" id="Hzg-Mr-z9F" customClass="ContainerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3jO-Qp-uaw"/>
+                        <viewControllerLayoutGuide type="bottom" id="OBd-FD-dix"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KdS-qw-GuA">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.129447854" blue="0.1369507324" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHD-OB-otc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="-529"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
