@@ -34,6 +34,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)refreshWithDataSource:(id)object {
+    NSLog(@"Container");
+}
 
 @end

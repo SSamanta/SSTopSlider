@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TopSliderVC : UIViewController
-
+typedef void (^TopSliderEventHandler) (NSUInteger eventType, id object);
+@interface TopSliderVC : UIViewController {
+    TopSliderEventHandler topSliderEventHandler;
+}
+- (void)complationOnEvent:(TopSliderEventHandler)handler;
 @end

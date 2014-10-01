@@ -9,7 +9,8 @@
 #import "TopSliderVC.h"
 
 @interface TopSliderVC ()
-
+- (IBAction)tabOneTapped:(id)sender;
+- (IBAction)tabTwoTapped:(id)sender;
 @end
 
 @implementation TopSliderVC
@@ -26,7 +27,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,5 +35,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (void)complationOnEvent:(TopSliderEventHandler)handler {
+    topSliderEventHandler =  handler;
+}
+- (IBAction)tabOneTapped:(id)sender {
+    topSliderEventHandler(1,nil);
+}
+- (IBAction)tabTwoTapped:(id)sender {
+    topSliderEventHandler(2,nil);
+}
 @end

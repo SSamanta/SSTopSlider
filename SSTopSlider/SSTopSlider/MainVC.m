@@ -47,6 +47,9 @@
     self.topSliderVC.view.frame = CGRectMake(0, 0, 1024, 200);
     self.containerVC.view.frame = CGRectMake(0, 200, 1024, 768);
     [self addPanGesture];
+    [self.topSliderVC complationOnEvent:^(NSUInteger eventType, id object) {
+        [self.containerVC refreshWithDataSource:object];
+    }];
     [self.view addSubview:self.topSliderVC.view];
     [self.view addSubview:self.containerVC.view];
 }
@@ -57,7 +60,6 @@
     [self.containerVC.view addGestureRecognizer:panGestureRecognizer];
 }
 - (void)handlePan:(UIPanGestureRecognizer *)recognizer {
-    
     CGPoint translation = [recognizer translationInView:recognizer.view];
     recognizer.view.center = CGPointMake(recognizer.view.center.x, recognizer.view.center.y+translation.y);
     [recognizer setTranslation:CGPointMake(0, 0) inView:recognizer.view];

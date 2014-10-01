@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ContainerVC : UIViewController
-
+- (void)refreshWithDataSource:(id)object;
 @end
